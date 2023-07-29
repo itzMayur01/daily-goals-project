@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: white;
+  }
+}
+
+.container {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  margin: 10px;
+  outline: none;
+}
+
+button {
+  background-color: rgb(14, 14, 14);
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    background-color: white;
+    color: rgb(14, 14, 14);
+  }
+}
+
+.task {
+  background-color: rgb(247, 247, 247);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 30px;
+  margin: 2vmax;
+  border-radius: 20px;
+  color: rgba(0, 0, 0, 0.868);
+  display: flex;
+  align-items: center;
+  transition: all 1s;
+  &:hover{
+    padding: 35px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.329);
+    
+    
+  }
+}
+
+
+
+.task > div {
+  width: 100%;
+}
+
+.task span {
+  color: rgba(0, 0, 0, 0.632);
+}
+
+.task p {
+  font-size: larger;
+
+  font-weight: bold;
+}
+
+.deleteBtn {
+  background-color: red;
+  border-radius: 30%;
+  width: 42px;
+  font-size: large;
+}
+
+@media screen and (max-width: 480px) {
+  .deleteBtn {
+    width: 40px;
+  }
+}
