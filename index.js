@@ -62,6 +62,9 @@ form.addEventListener("submit", (e) => {
     title: title.value,
     description: description.value,
   });
+  
   localStorage.setItem("tasks", JSON.stringify(tasks));
   showAllTasks();
+  title.value = ''; //clear the values after submiting the form
+  description.value = '';
 });
