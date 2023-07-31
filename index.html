@@ -16,17 +16,27 @@
       <form>
         <input type="text" id="title" placeholder="Title here"  required/>
         <textarea id="description" placeholder="Description here" required></textarea>
+        <input type="text" placeholder="Date" id="date" onfocus="(this.type='date')"required/>
+        <input type="text" placeholder="Time" id="time" onfocus="(this.type='time')" required/>
+        
+        
         <button type="submit">Add</button>
       </form>
 
       <!-- <div class="task">
+        
         <div>
+          <span class="badge">date</span>
+          <span class="badge1">time</span>
           <p>titile here</p>
           <span>discription here</span>
         </div>
-        <button class="deleteBtn">-</button>
+        <button class="deleteBtn"><i class="fa-solid fa-trash-can"></i></button>
+      
       </div> -->
+      
     </div>
     <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/9a33e87fb1.js" crossorigin="anonymous"></script>
   </body>
 </html>

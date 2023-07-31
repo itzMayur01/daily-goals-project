@@ -1,7 +1,11 @@
 const title = document.getElementById("title");
 const description = document.getElementById("description");
+const date = document.getElementById("date");
+const time = document.getElementById("time");
 const form = document.querySelector("form");
 const container = document.querySelector(".container");
+
+
 
 const tasks = localStorage.getItem("tasks")?JSON.parse(localStorage.getItem("tasks")):[];
 showAllTasks();
@@ -16,22 +20,35 @@ function showAllTasks (){
     const innerDiv = document.createElement("div");
     div.append(innerDiv);
 
+    const span = document.createElement("span");
+    span.setAttribute("class", "badge");
+    span.innerText = value.date;
+    innerDiv.append(span);
+
+    const span1 = document.createElement("span");
+    span1.setAttribute("class", "badge1");
+    span1.innerText = value.time;
+    innerDiv.append(span1);
+
     const p = document.createElement("p");
     p.innerText = value.title;
     innerDiv.append(p);
 
-    const span = document.createElement("span");
-    span.innerText = value.description;
-    innerDiv.append(span);
+    const span2 = document.createElement("span");
+    span2.innerText = value.description;
+    innerDiv.append(span2);
 
     const btn = document.createElement("button");
-    btn.setAttribute("class", "deleteBtn")
-    btn.innerText= "-";
+    btn.setAttribute("class", "deleteBtn");
+    const i = document.createElement("i");
+    i.setAttribute("class","fa-solid fa-trash-can");
+    btn.append(i);
     
     btn.addEventListener("click",()=>{
       removeTask();
       tasks.splice(index,1);
       localStorage.setItem("tasks", JSON.stringify(tasks));
+      
       showAllTasks();
     })
     div.append(btn);
@@ -61,10 +78,19 @@ form.addEventListener("submit", (e) => {
   tasks.push({
     title: title.value,
     description: description.value,
+    date: date.value,
+    time: time.value,
+
   });
+  console.log(tasks);
   
   localStorage.setItem("tasks", JSON.stringify(tasks));
+  
   showAllTasks();
   title.value = ''; //clear the values after submiting the form
   description.value = '';
+  dateTime.value = '';
 });
+
+
+
