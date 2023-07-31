@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Goals Develop By Mayur</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
-<link rel="manifest" href="./favicon_io/site.webmanifest">
-  </head>
-  <body>
-    <div class="container">
-      <h1>DAILY GOALS</h1>
-      <form>
-        <input type="text" id="title" placeholder="Title here"  required/>
-        <textarea id="description" placeholder="Description here" required></textarea>
-        <input type="text" placeholder="Date" id="date" onfocus="(this.type='date')"required/>
-        <input type="text" placeholder="Time" id="time" onfocus="(this.type='time')" required/>
-        
-        
-        <button type="submit">Add</button>
-      </form>
 
-      <!-- <div class="task">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Goals Develop By Mayur</title>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="./favicon_io/site.webmanifest" />
+</head>
+
+<body>
+  
+  <h1>DAILY GOALS</h1>
+
+  <div class="container">
+    <form>
+      <input type="text" id="title" placeholder="Title here" required />
+      <textarea id="description" placeholder="Description here" required></textarea>
+
+      <input type="text" placeholder="Date" id="date" onfocus="(this.type='date')" required />
+      <input type="text" placeholder="Time" id="time" onfocus="(this.type='time')" required />
+
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- <div class="task">
         
         <div>
           <span class="badge">date</span>
@@ -34,9 +38,35 @@
         <button class="deleteBtn"><i class="fa-solid fa-trash-can"></i></button>
       
       </div> -->
-      
+  </div>
+  <footer>
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a><i class="fa-brands fa-facebook"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+        <a><i class="fa-brands fa-twitter"></i></a>
+        <a><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <!-- <div class="footerNav">
+
+        <ul>
+          <li><a href="">home</a></li>
+          <li><a href="">about</a></li>
+          <li><a href="">contact us</a></li>
+          <li><a href="">our team</a></li>
+        </ul>
+      </div> -->
     </div>
-    <script src="./index.js"></script>
-    <script src="https://kit.fontawesome.com/9a33e87fb1.js" crossorigin="anonymous"></script>
-  </body>
+    <div class="footerBottom">
+      <p>
+        Copyright &copy;2023 Develop by <span class="developer">Mayur</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+  <script src="https://kit.fontawesome.com/9a33e87fb1.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
