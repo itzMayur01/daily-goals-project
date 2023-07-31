@@ -89,7 +89,8 @@ form.addEventListener("submit", (e) => {
   showAllTasks();
   title.value = ''; //clear the values after submiting the form
   description.value = '';
-  dateTime.value = '';
+  date.value = '';
+  time.value = '';
 });
 
 
